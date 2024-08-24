@@ -1,0 +1,39 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #1d1e20;
+  background-color: rgb(255, 252, 250);
+}
+
+header {
+  padding: 40px 16px;
+  font-size: 14px;
+
+  .nav {
+    column-gap: 36px;
+
+    .nav-link {
+      padding: 0;
+      color: #000000;
+
+      &:hover, &.active {
+        text-decoration: underline;
+        text-underline-offset: 7px;
+      }
+    }
+  }
+}
+
+#greeting {
+  .introduction-title {
+    font-family: 'DM Serif Display', serif;
+
+    .name {
+      color: rgb(240, 105, 17);
+
+    }
+  }
+
+  .introduction-description {
+    font-family: 'Work Sans';
+  }
+}
