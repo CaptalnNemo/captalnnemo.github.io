@@ -37,3 +37,13 @@ header {
     font-family: 'Work Sans';
   }
 }
+
+#works {
+  .work-item {
+    margin-bottom: 30px;
+
+    .work-item-link {
+      color: #000000;
+    }
+  }
+}
