@@ -1,40 +1,24 @@
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: #1d1e20;
   background-color: rgb(255, 252, 250);
 }
 
-header {
-  padding: 40px 16px;
+.header {
   font-size: 14px;
-
-  .nav {
-    column-gap: 36px;
-
-    .nav-link {
-      padding: 0;
-      color: #000000;
-
-      &:hover, &.active {
-        text-decoration: underline;
-        text-underline-offset: 7px;
-      }
-    }
-  }
 }
 
 #greeting {
   .introduction-title {
-    font-family: 'DM Serif Display', serif;
+    font-family: "DM Serif Display", serif;
 
     .name {
-      color: rgb(240, 105, 17);
-
+      color: #f06911;
     }
   }
 
   .introduction-description {
-    font-family: 'Work Sans';
+    font-family: "Work Sans";
   }
 }
 
@@ -43,7 +27,16 @@ header {
     margin-bottom: 30px;
 
     .work-item-link {
-      color: #000000;
+      color: #000;
     }
+  }
+}
+
+.footer {
+  .social-icons__link {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: #000;
   }
 }
