@@ -5,99 +5,141 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Works</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-		crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<link
-		href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Wix+Madefor+Display:wght@400..800&display=swap"
 		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 	<link rel="stylesheet" href="./styles/main.css" />
 </head>
 
 <body>
 	<div class="container">
-		<header class="header navbar navbar-expand-md py-4">
-			<a class="navbar-brand" href="#"><img src="./images/Reese.svg" alt="" class="h-100" /></a>
-			<button class="navbar-toggler collapsed shadow-none" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="navbar-collapse collapse" id="navbar">
-				<ul class="mb-2 mb-lg-0 ms-auto navbar-nav">
-					<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">CÔNG VIỆC</a></li>
-					<li class="nav-item"><a href="./about.html" class="nav-link">VỀ TÔI</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">RESUME</a></li>
-					<li class="nav-item"><a href="./en/index.html" class="nav-link">EN</a></li>
-				</ul>
+		<header class="py-4 header">
+			<div class="row align-items-center">
+				<div class="col-md-4 d-flex justify-content-center justify-content-md-start">
+					<a class="nav-link active me-2" href="#">Work</a>
+					<a class="nav-link mx-2" href="./about.html">About</a>
+					<a class="nav-link ms-2" href="#">Resume</a>
+				</div>
+				<div class="col-md-4 text-center py-1 py-md-0">
+					<span class="logo">l/anh</span>
+				</div>
+				<div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+					<a class="nav-link me-2" href="./about.html">Vi</a>
+					<a class="nav-link active ms-2" href="./about.html">En</a>
+				</div>
 			</div>
 		</header>
-		<section id="greeting" class="d-flex flex-wrap justify-content-center">
-			<div class="row flex-md-row-reverse">
-				<div class="col-md-6 d-flex flex-column justify-content-center">
-					<h1 class="introduction-title mb-md-4 mb-sm-2">
-						<strong>I'm </strong>
-						<strong class="name">Lan Anh 👋</strong>
-					</h1>
-					<p class="introduction-description fs-5">As a product designer working at the apex of new tech, I’m fascinated
-						by how design decisions influence user interactions with products.</p>
+		<section id="greeting" class="row">
+			<div class="col-md-10">
+				<div class="animate__animated animate__slideInDown mb-4">
+					<img class="avatar" src="./images/avatar.jpg" alt="">
 				</div>
-				<div class="col-md-6 text-center text-md-end">
-					<img src="./images/me.png" alt="" class="mw-100" />
+				<p class="description animate__animated animate__slideInRight">
+					I'm Lan Anh, a UX/UI designer specializing in creating visually designs that are both functional and
+					user-friendly
+				</p>
+				<p class="previous-work animate__animated animate__slideInLeft">Previously @ Sun* Inc. (Sun Asterisk Inc.),
+					Hanoi</p>
+				<div class="animate__animated animate__slideInUp">
+					<a href="mailto:maithilananh95@gmail.com" class="btn btn-dark">Let's connect</a>
 				</div>
 			</div>
 		</section>
-		<section id="works">
-			<div class="work-item">
+		<section id="projects">
+			<a class="project-item d-block" href="./project_1.html">
 				<div class="row">
-					<img src="./images/project1.jpg" alt="" />
-					<h1 class="introduction-title my-3">VR & AR work</h1>
-					<a href="./project_1.html" class="work-item-link">View project</a>
+					<h3 class="project-title col-md-5">Delivery Scheduling Optimization System</h1>
+						<p class="project-description col-md-5">A system using AI to optimize delivery scheduling, automating
+							complex planning to reduce adjustments and boost employee productivity</p>
+						<p class="col-md-2 text-md-end">2024</p>
 				</div>
-			</div>
-			<div class="work-item">
+				<img src="./images/project-image.png" alt="" class="project-image" />
+			</a>
+			<a class="project-item d-block" href="./project_1.html">
 				<div class="row">
-					<img src="./images/project2.jpg" alt="" />
-					<h1 class="introduction-title my-3">Online interactive project</h1>
-					<a href="./project_2.html" class="work-item-link">View project</a>
+					<h3 class="project-title col-md-5">Quotation app for gas equipment sales staff</h1>
+						<p class="project-description col-md-5">A tablet and mobile app that allows sales staff to easily create and
+							manage quotations from anywhere, helps employees save time, quickly respond to customer requests, enhances
+							work efficiency</p>
+						<p class="col-md-2 text-md-end">2019</p>
+				</div>
+				<img src="./images/project-image.png" alt="" class="project-image" />
+			</a>
+			<a class="project-item d-block" href="./project_1.html">
+				<div class="row">
+					<h3 class="project-title col-md-5">Quotation app for gas equipment sales staff</h1>
+						<p class="project-description col-md-5">A tablet and mobile app that allows sales staff to easily create and
+							manage quotations from anywhere, helps employees save time, quickly respond to customer requests, enhances
+							work efficiency</p>
+						<p class="col-md-2 text-md-end">2019</p>
+				</div>
+				<img src="./images/project-image.png" alt="" class="project-image" />
+			</a>
+			<a class="project-item d-block" href="./project_1.html">
+				<div class="row">
+					<h3 class="project-title col-md-5">Quotation app for gas equipment sales staff</h1>
+						<p class="project-description col-md-5">A tablet and mobile app that allows sales staff to easily create and
+							manage quotations from anywhere, helps employees save time, quickly respond to customer requests, enhances
+							work efficiency</p>
+						<p class="col-md-2 text-md-end">2019</p>
+				</div>
+				<img src="./images/project-image.png" alt="" class="project-image" />
+			</a>
+		</section>
+
+		<section id="motto" class="row mt-5">
+			<p class="col-lg-8 col-md-10">As a designer, I want to always stay ahead of the curve and challenge myself to
+				learn
+				something new every single day to continuously improve experiences.</p>
+		</section>
+
+		<section id="slides" class="my-5">
+			<div class="swiper slides-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background-image: url(./images/slides/image-1.png)"></div>
+					<div class="swiper-slide" style="background-image: url(./images/slides/image-2.png)"></div>
+					<div class="swiper-slide" style="background-image: url(./images/slides/image-3.png)"></div>
+					<div class="swiper-slide" style="background-image: url(./images/slides/image-4.png)"></div>
+					<div class="swiper-slide" style="background-image: url(./images/slides/image-5.png)"></div>
 				</div>
 			</div>
 		</section>
 
-		<footer class="footer row py-3 mt-4 border-top">
-			<div class="contact-info col-auto">
-				<p class="fw-bold fs-5 mb-1">Contact me:</p>
-				<p class="fs-3">maithilananh95@gmail.com</p>
+		<footer class="footer row py-4 mt-4">
+			<div class="copyright col-md-5">
+				© Lan Anh 2024
 			</div>
-			<div class="social-icons col-md-3 ms-auto text-md-end">
-				<a href="https://linkedin.com" target="_blank" rel="noopener" title="Go to Linkedin-in page"
-					class="social-icons__link">
-					<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="linkedin-in-brands">
-						<path
-							d="M5.372 24H.396V7.976h4.976V24zM2.882 5.79C1.29 5.79 0 4.474 0 2.883a2.882 2.882 0 115.763 0c0 1.59-1.29 2.909-2.881 2.909zM23.995 24H19.03v-7.8c0-1.86-.038-4.243-2.587-4.243-2.587 0-2.984 2.02-2.984 4.109V24H8.49V7.976h4.772v2.186h.07c.664-1.259 2.287-2.587 4.708-2.587 5.035 0 5.961 3.316 5.961 7.623V24h-.005z"
-							fill="currentColor"></path>
-					</svg>
-				</a>
-				<a href="https://behance.com/" target="_blank" rel="noopener" title="Go to Behance page"
-					class="social-icons__link mx-3">
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.66667 11.2188C10.9917 10.5854 11.6833 9.62711 11.6833 8.13545C11.6833 5.19378 9.49167 4.47711 6.9625 4.47711H0V19.2438H7.15833C9.84167 19.2438 12.3625 17.9563 12.3625 14.9563C12.3625 13.1021 11.4833 11.7313 9.66667 11.2188ZM3.24583 6.99794H6.29167C7.4625 6.99794 8.51667 7.32711 8.51667 8.68544C8.51667 9.93961 7.69583 10.4438 6.5375 10.4438H3.24583V6.99794ZM6.71667 16.7354H3.24583V12.6688H6.78333C8.2125 12.6688 9.11667 13.2646 9.11667 14.7771C9.11667 16.2688 8.0375 16.7354 6.71667 16.7354ZM21.6542 6.70628H15.6667V5.25211H21.6542V6.70628ZM24 14.0521C24 10.8896 22.15 8.25211 18.7958 8.25211C15.5375 8.25211 13.325 10.7021 13.325 13.9104C13.325 17.2396 15.4208 19.5229 18.7958 19.5229C21.35 19.5229 23.0042 18.3729 23.8 15.9271H21.2083C20.9292 16.8396 19.7792 17.3229 18.8875 17.3229C17.1667 17.3229 16.2625 16.3146 16.2625 14.6021H23.975C23.9875 14.4271 24 14.2396 24 14.0521ZM16.2667 12.7521C16.3625 11.3479 17.2958 10.4688 18.7042 10.4688C20.1792 10.4688 20.9208 11.3354 21.0458 12.7521H16.2667Z"
-							fill="currentColor"></path>
-					</svg>
-				</a>
-				<a href="https://dribbble.com/" target="_blank" rel="noopener" title="Go to Dribbble page"
-					class="social-icons__link">
-					<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="dribbble-brands">
-						<path
-							d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0zm7.934 5.534a10.2 10.2 0 012.315 6.385c-.338-.072-3.727-.759-7.138-.33a31.747 31.747 0 00-.9-2.014c3.79-1.547 5.507-3.749 5.723-4.041zm-1.14-1.185c-.184.262-1.727 2.336-5.371 3.702a54.709 54.709 0 00-3.825-6c3.25-.784 6.676.061 9.197 2.298zM7.643 2.739c.27.371 2.102 2.91 3.8 5.929C6.649 9.94 2.426 9.922 1.968 9.916A10.287 10.287 0 017.642 2.74zM1.75 12.017c0-.105.002-.21.005-.314.449.01 5.416.074 10.534-1.458.294.574.574 1.157.832 1.74-3.707 1.043-7.074 4.04-8.736 6.885a10.209 10.209 0 01-2.635-6.853zm3.959 8.086c1.07-2.189 3.976-5.014 8.108-6.424 1.44 3.74 2.034 6.874 2.187 7.773A10.229 10.229 0 015.709 20.1zm12.018.41c-.105-.623-.65-3.623-1.991-7.308 3.212-.514 6.034.328 6.384.439a10.268 10.268 0 01-4.393 6.87z"
-							fill="currentColor"></path>
-					</svg>
-				</a>
+			<div class="social-icons col-md-7 ms-auto text-md-end">
+				<a href="https://behance.net" target="_blank" class="social-icons__link">Behance</a>
+				<a href="https://dribbble.com" target="_blank" class="social-icons__link mx-2">Dribbble</a>
+				<a href="https://linkedin.com" target="_blank" class="social-icons__link">LinkedIn</a>
 			</div>
 		</footer>
 	</div>
+
+	<script>
+		var swiper = new Swiper(".slides-swiper", {
+			loop: true,
+			freeMode: true,
+			spaceBetween: 10,
+			slidesPerView: 'auto',
+			centeredSlides: true,
+			loopFillGroupWithBlank: 3,
+			loop: true,
+			autoplay: {
+				delay: 1,
+				disableOnInteraction: false
+			},
+			speed: 4500,
+			freeModeMomentum: false
+		});
+	</script>
 </body>
 
 </html>
