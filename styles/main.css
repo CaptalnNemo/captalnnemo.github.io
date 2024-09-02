@@ -29,6 +29,7 @@ a {
 
 #greeting {
   padding: 50px 0;
+  overflow-x: hidden;
 
   @media (min-width: 768px) {
     padding: 100px 0;
