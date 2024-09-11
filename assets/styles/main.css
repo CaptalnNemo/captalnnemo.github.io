@@ -145,7 +145,7 @@ a {
       &:after {
         content: url(../images/arrow_forward_2.svg);
         transform: rotate(45deg);
-        transform-origin: 10px 11.5px;
+        transform-origin: 10px 12px;
       }
     }
   }
