@@ -32,15 +32,14 @@ a {
   }
 }
 
+.main {
+  padding: 120px 0;
+}
+
 #greeting {
   --animate-delay: 0.5s;
-  padding: 50px 0;
-  margin-bottom: 40px;
+  margin-bottom: 160px;
   overflow: hidden;
-
-  @media (min-width: 768px) {
-    padding: 120px 0;
-  }
 
   .avatar {
     width: 65px;
@@ -119,7 +118,6 @@ a {
 }
 
 .footer {
-  margin-top: 160px;
   padding: 40px 0;
   font-size: 14px;
   font-weight: 500;
@@ -148,5 +146,36 @@ a {
         transform-origin: 10px 12px;
       }
     }
+  }
+}
+
+#about {
+  --animate-delay: 0.5s;
+  overflow: hidden;
+
+
+  @media (min-width: 768px) {
+    .introduction {
+      padding-right: 40px;
+    }
+    .avatar-container {
+      padding-left: 40px;
+    }
+  }
+
+  .introduction-title {
+    font-size: min(calc(1em + 2.5vw), 32px);
+    line-height: 1.25;
+    margin-bottom: 64px;
+  }
+
+  .description {
+    line-height: 26px;
+  }
+
+  .avatar {
+    width: 100%;
+    max-width: 620px;
+    object-fit: cover;
   }
 }
