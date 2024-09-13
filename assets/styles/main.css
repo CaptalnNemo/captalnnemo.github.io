@@ -38,7 +38,7 @@ a {
 
 #greeting {
   --animate-delay: 0.5s;
-  margin-bottom: 160px;
+  padding-bottom: 160px;
   overflow: hidden;
 
   .avatar {
