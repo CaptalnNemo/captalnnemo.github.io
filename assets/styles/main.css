@@ -179,3 +179,31 @@ a {
     object-fit: cover;
   }
 }
+
+.project-banner {
+  img {
+    width: 100%;
+    max-height: calc(100vw / 2.88);
+    object-fit: cover;
+  }
+}
+
+.nda-disclosure {
+  margin-top: -80px;
+  color: #868686;
+
+  span {
+    font-weight: 500;
+
+    &.note {
+      font-weight: 600;
+    }
+  }
+}
+
+.project-name {
+  font-size: min(calc(1em + 2.5vw), 54px);
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
