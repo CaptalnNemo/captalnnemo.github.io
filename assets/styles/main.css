@@ -34,6 +34,10 @@ a {
 
 .main {
   padding: 120px 0;
+
+  &.project-details {
+    padding: 40px 0 120px;
+  }
 }
 
 #greeting {
@@ -153,7 +157,6 @@ a {
   --animate-delay: 0.5s;
   overflow: hidden;
 
-
   @media (min-width: 768px) {
     .introduction {
       padding-right: 40px;
@@ -188,8 +191,11 @@ a {
   }
 }
 
+.project-details {
+  color: #424242;
+}
+
 .nda-disclosure {
-  margin-top: -80px;
   color: #868686;
 
   span {
@@ -206,4 +212,99 @@ a {
   line-height: 1.25;
   font-weight: 400;
   letter-spacing: -0.01em;
+  margin-bottom: 72px;
+  color: #282828;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.project-detail-primary-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #282828;
+}
+
+.project-detail-primary-sub-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #282828;
+}
+
+.project-detail-secondary-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #282828;
+}
+
+.project-main-image {
+  margin-bottom: 60px;
+
+  img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-detail-left {
+    padding-right: 40px;
+  }
+  .project-detail-right {
+    padding-left: 40px;
+  }
+}
+
+.project-detail-section {
+  margin-bottom: 64px;
+
+  .project-image {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.project-detail-menu {
+  position: sticky;
+  top: 20px;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #868686;
+
+    &.active {
+      color: #282828;
+      font-weight: 700;
+    }
+  }
+}
+
+.bg-whitesmoke {
+  background-color: #F5F5F5;
+  padding: 24px;
+  height: 100%;
+
+  .project-detail-secondary-title {
+    color: #063DCC;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 5px;
+ }
 }
