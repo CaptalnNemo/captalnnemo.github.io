@@ -35,11 +35,14 @@
       <div class="container">
         <section id="greeting">
           <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-11">
               <div class="wow animate__fadeInUp mb-4">
                 <img class="avatar" src="./assets/images/avatar.png" alt="" />
               </div>
-              <p class="description wow animate__fadeInUp animate__delay-1s mb-4">Mình là Lan Anh, một UI/UX designer thích tạo ra những thiết kế trực quan và thân thiện với người dùng.</p>
+              <p class="description wow animate__fadeInUp animate__delay-1s mb-4">
+                Mình là Lan Anh,<br />
+                một UI/UX designer thích tạo ra những thiết kế trực quan và thân thiện với người dùng.
+              </p>
               <p class="previous-work wow animate__fadeInUp animate__delay-2s mb-4">Từng làm việc ở @ Sun* Inc. (Sun Asterisk Inc.), Hanoi</p>
               <div class="connect-btn wow animate__fadeInUp animate__delay-3s">
                 <a href="mailto:maithilananh95@gmail.com" class="btn btn-dark btn-contact">Liên hệ</a>
@@ -161,13 +164,38 @@
 
         $(".slider-wrapper").slick({
           infinite: true,
-          slidesToShow: 4,
+          slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
           autoplay: true,
-          speed: 600,
-          autoplaySpeed: 2000,
-          cssEase: "linear",
+          autoplaySpeed: 1500,
+          mobileFirst: true,
+          responsive: [
+            {
+              breakpoint: 1400,
+              settings: {
+                slidesToShow: 4,
+              }
+            },
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+              }
+            },
+          ]
         });
       });
     </script>
