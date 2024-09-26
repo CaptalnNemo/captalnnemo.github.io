@@ -67,7 +67,9 @@ a {
   }
 
   .btn-contact {
+    line-height: 26px;
     border-radius: 10px;
+    padding: 8px 24px;
   }
 }
 
