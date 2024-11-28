@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:image" content="../assets/images/thumb.svg" />
+  <title>Mai Thị Lan Anh</title>
+  <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Wix+Madefor+Display:wght@400..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <link rel="stylesheet" href="../assets/styles/main.css?t=202409262" />
+</head>
+
+<body>
+  <header class="py-4 header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-start">
+          <a class="nav-link active me-3" href="../index.html">Work</a>
+          <a class="nav-link mx-3" href="../about.html">About</a>
+          <!-- <a class="nav-link ms-3" href="https://drive.google.com/file/d/1Jg4D8aX3l9u7LURfYcTcJcX9x74dsgfr/view" target="_blank">Resume</a> -->
+        </div>
+        <div class="col-md-4 text-center py-1 py-md-0">
+          <span class="logo">l/anh</span>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+          <a class="nav-link me-2" href="../vi/projects/heritages.html">Vi</a>
+          <a class="nav-link active ms-2" href="./heritages.html">En</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="project-banner">
+    <img src="../assets/images/projects/heritages/banner.png" alt="" />
+  </div>
+  <div class="main project-details">
+    <div class="container">
+      <h2 class="project-name">Heritages</h2>
+      <div class="row mb-40">
+        <div class="col-sm-9 project-detail-left">
+          <h3 class="project-detail-primary-title mb-4">Overview</h3>
+          <p class="mb-40">
+            The tour booking website offers a variety of packages, from leisure and exploration to adventure, catering
+            to all travelers. With a user-friendly interface, customers can easily search, book, and securely pay
+            online. A 24/7 support team ensures a seamless and convenient booking experience.
+          </p>
+        </div>
+        <div class="col-sm-3 project-detail-right">
+          <div class="mb-4">
+            <p class="project-detail-secondary-title mb-2">Platform</p>
+            <p>Website / Responsive</p>
+          </div>
+          <div class="mb-4">
+            <p class="project-detail-secondary-title mb-2">Skills/Tools</p>
+            <p class="mb-2">Research, Wireframe</p>
+            <p>Figma</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <section class="project-detail-section mb-40" id="section-1">
+            <div class="project-image">
+              <img src="../assets/images/projects/heritages/gallery_1.png" class="glightbox" data-gallery="gallery1" />
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="copyright col-md-5 mb-2 mb-md-0">© Lan Anh 2024</div>
+        <div class="social-links col-md-7 text-md-end">
+          <a href="https://www.behance.net/maithilana0ad2" target="_blank" class="social-link">Behance</a>
+          <a href="https://dribbble.com/lananh" target="_blank" class="social-link">Dribbble</a>
+          <a href="https://www.linkedin.com/in/anh-mai-573a95179/" target="_blank" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="../assets/scripts/wow.min.js"></script>
+
+  <script type="text/javascript">
+    const lightbox = GLightbox({
+      touchNavigation: true,
+    });
+
+    // Use Your Class or ID For Selection
+    function onScroll(event) {
+      var scrollPos = $(document).scrollTop();
+      $(".project-detail-menu a").each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("data-target"));
+        if (refElement.position().top <= scrollPos + 148 && refElement.position().top + refElement.height() > scrollPos) {
+          $(".project-detail-menu li a").removeClass("active");
+          currLink.addClass("active");
+        } else {
+          currLink.removeClass("active");
+        }
+      });
+    }
+
+    $(document).ready(function () {
+      $(document).on("scroll", onScroll);
+
+      //smoothscroll
+      $("a.scroll-to-anchor").on("click", function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+
+        $("a.scroll-to-anchor").removeClass("active");
+        $(this).addClass("active");
+
+        var target = $(this).data("target");
+        $target = $(target);
+        $("html, body")
+          .stop()
+          .scrollTop($target.offset().top - 140);
+        setTimeout(function () {
+          $(document).on("scroll", onScroll);
+        }, 1000);
+      });
+    });
+  </script>
+</body>
+
+</html>
