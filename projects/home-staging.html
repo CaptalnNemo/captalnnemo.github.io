@@ -24,7 +24,8 @@
         <div class="col-md-4 d-flex justify-content-center justify-content-md-start">
           <a class="nav-link active me-3" href="../index.html">Work</a>
           <a class="nav-link mx-3" href="../about.html">About</a>
-          <!-- <a class="nav-link ms-3" href="https://drive.google.com/file/d/1Jg4D8aX3l9u7LURfYcTcJcX9x74dsgfr/view" target="_blank">Resume</a> -->
+          <a class="nav-link ms-3" href="https://drive.google.com/file/d/1Jg4D8aX3l9u7LURfYcTcJcX9x74dsgfr/view"
+            target="_blank">Resume</a>
         </div>
         <div class="col-md-4 text-center py-1 py-md-0">
           <span class="logo">l/anh</span>
@@ -45,9 +46,10 @@
       <div class="row mb-40">
         <div class="col-sm-9 project-detail-left">
           <h3 class="project-detail-primary-title mb-4">Overview</h3>
-          <p class="mb-40">
-            The Home Staging website introduces advanced AI technology, making it easy and creative for you to design your home's interior. Simply select the room type, favorite furniture style, and get a complete interior design in seconds. With a simple, user-friendly interface and practical product suggestions, it helps turn your ideas into reality effortlessly.
-          </p>
+          <p class="mb-40">The Home Staging website introduces advanced AI technology, making it easy and creative for
+            you to design your home's interior. Simply select the room type, favorite furniture style, and get a
+            complete interior design in seconds. With a simple, user-friendly interface and practical product
+            suggestions, it helps turn your ideas into reality effortlessly.</p>
         </div>
         <div class="col-sm-3 project-detail-right">
           <div class="mb-4">
@@ -65,17 +67,20 @@
         <div class="col-12">
           <section class="project-detail-section m-0" id="section-1">
             <div class="project-image">
-              <img src="../assets/images/projects/home-staging/gallery_1.png" class="glightbox" data-gallery="gallery1" />
+              <img src="../assets/images/projects/home-staging/gallery_1.png" class="glightbox"
+                data-gallery="gallery1" />
             </div>
           </section>
           <section class="project-detail-section m-0" id="section-2">
             <div class="project-image">
-              <img src="../assets/images/projects/home-staging/gallery_2.png" class="glightbox" data-gallery="gallery1" />
+              <img src="../assets/images/projects/home-staging/gallery_2.png" class="glightbox"
+                data-gallery="gallery1" />
             </div>
           </section>
           <section class="project-detail-section m-0" id="section-3">
             <div class="project-image">
-              <img src="../assets/images/projects/home-staging/gallery_3.png" class="glightbox" data-gallery="gallery1" />
+              <img src="../assets/images/projects/home-staging/gallery_3.png" class="glightbox"
+                data-gallery="gallery1" />
             </div>
           </section>
         </div>
@@ -99,50 +104,9 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="../assets/scripts/wow.min.js"></script>
-
-  <script type="text/javascript">
-    const lightbox = GLightbox({
-      touchNavigation: true,
-    });
-
-    // Use Your Class or ID For Selection
-    function onScroll(event) {
-      var scrollPos = $(document).scrollTop();
-      $(".project-detail-menu a").each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("data-target"));
-        if (refElement.position().top <= scrollPos + 148 && refElement.position().top + refElement.height() > scrollPos) {
-          $(".project-detail-menu li a").removeClass("active");
-          currLink.addClass("active");
-        } else {
-          currLink.removeClass("active");
-        }
-      });
-    }
-
-    $(document).ready(function () {
-      $(document).on("scroll", onScroll);
-
-      //smoothscroll
-      $("a.scroll-to-anchor").on("click", function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-
-        $("a.scroll-to-anchor").removeClass("active");
-        $(this).addClass("active");
-
-        var target = $(this).data("target");
-        $target = $(target);
-        $("html, body")
-          .stop()
-          .scrollTop($target.offset().top - 140);
-        setTimeout(function () {
-          $(document).on("scroll", onScroll);
-        }, 1000);
-      });
-    });
-  </script>
+  <script src="../assets/scripts/main.js?t=20241129"></script>
 </body>
 
 </html>
